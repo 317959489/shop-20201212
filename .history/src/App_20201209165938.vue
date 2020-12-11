@@ -1,0 +1,26 @@
+<template>
+  <router-view></router-view>
+
+</template>
+
+<script>
+export default {
+  name: '',
+  props: {},
+  data () {
+    return {
+    }
+  },
+  components: {},
+  methods: {},
+  mounted () {
+    console.log(this.$store.state.abc);
+    commit("set_abc", 321)
+  },
+  computed: {},
+  watch: {}
+}
+</script>
+
+<style lang="scss" scoped>
+</style>
