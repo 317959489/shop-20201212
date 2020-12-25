@@ -1,0 +1,49 @@
+<template>
+  <div class="all">
+    <router-view></router-view>
+    <van-tabbar v-model="active"
+                active-color="#ee0a24"
+                inactive-color="#000">
+      <van-tabbar-item name="home"
+                       replace
+                       to="/"
+                       icon="wap-home-o">商城</van-tabbar-item>
+      <van-tabbar-item name='Classification'
+                       replace
+                       to="/classification"
+                       icon="wap-nav">分类</van-tabbar-item>
+      <van-tabbar-item replace
+                       to="/shoppingcart"
+                       icon="shopping-cart"
+                       badge="5">购物车</van-tabbar-item>
+      <van-tabbar-item replace
+                       to="/mine"
+                       icon="contact">我的</van-tabbar-item>
+    </van-tabbar>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: '',
+  props: {},
+  data () {
+    return {
+      active: 'home',
+    }
+  },
+  components: {},
+  methods: {},
+  mounted () {
+    this.$nextTick(() => {
+
+    })
+  },
+  computed: {},
+  watch: {}
+}
+</script>
+
+<style lang="scss" scoped>
+</style>
